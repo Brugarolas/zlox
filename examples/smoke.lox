@@ -1,0 +1,25 @@
+fun makeCounter() {
+  var value = 0;
+  fun next() {
+    value = value + 1;
+    return value;
+  }
+  return next;
+}
+
+class Doughnut {
+  cook() {
+    return "fried";
+  }
+}
+
+class BostonCream < Doughnut {
+  cook() {
+    return super.cook() + " + custard + chocolate";
+  }
+}
+
+var counter = makeCounter();
+print counter();
+print counter();
+print BostonCream().cook();
