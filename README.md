@@ -110,5 +110,3 @@ Debug instrumentation is disabled by default, including Debug builds.
 - Interned strings are weak roots.
 - Constants and property/global names currently use 8-bit chunk indices (256 constants/chunk).
 - The register bytecode has 256 addressable registers per function.
-
-See `MIGRATION.md` for the Zig/Lox migration and `REGISTER_VM.md` for the VM architecture.
